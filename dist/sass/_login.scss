@@ -1,0 +1,75 @@
+@import "custom-variables";
+
+/*Login -- START*/
+%vertical-align {
+	&::before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-left: -4px;
+	}
+	& > * {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.log-in {
+	@extend %vertical-align;  
+	height: 100vh;
+	background: url(../img/log_in-bg.jpg) no-repeat center;
+	background-size: cover;
+	text-align: center;
+	.log-in-holder {
+		flex-direction: column;	
+		width: 290px;
+		height: 331px;
+		background: #fff;
+		border-radius: 1em;
+		justify-content: center;
+		box-shadow: 0px 5px 16px 5px rgba(0, 2, 3, 0.08);
+		.email-holder {
+			padding-bottom: 14px;
+		}
+		.label-control {
+			font-size: 28px;
+			vertical-align: sub;
+			color: #a0a0a0;
+			padding-right: 30px;
+		}
+		.form-control {
+			border-bottom: 1px solid #9e9e9e;
+			color: #bdbdbd;
+			font-size: 1.8em;
+			width: 10.56em;
+			line-height: 2.4;
+			font-weight: 400;
+		}
+		.form-btn {
+			display: flex;
+    	margin: 40px auto 0 auto;
+    	background: #00a1f1;
+    	padding: 0 5em;
+    	line-height: 2.3;
+    	border-radius: 0.8em;
+    	color: #fff;
+    	font-weight: 700;
+    	font-size: 1.8em;
+		}
+		.checkbox-holder {
+			margin-top: 24px;
+			& > * {
+				color: #a0a0a0;
+				font-size: 1.4em;
+			}
+		}
+	}
+}
+/*Login -- END*/
+
+
+
+
+
+
